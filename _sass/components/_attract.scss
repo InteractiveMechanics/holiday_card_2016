@@ -1,5 +1,63 @@
 #attract {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(250,0,0,0.6);
+	background-color: rgba(0,0,0,0.5);
+
+	.gift-tag-wrapper {
+		display: block;
+		width: 320px;
+    	position: relative;
+    	left: -60px; // accounts for ribbon width
+	}
+
+	img {
+		// display: block;
+		width: 100%;
+  //   	position: relative;
+  //   	left: -60px; // accounts for ribbon width
+	}
+
+	#close {
+		width: 40px;
+		height: 40px;
+		background-color: rgba(125, 125, 125, 0.7);
+		color: #ffffff;
+		font-size: 1.6em;
+		text-align: center;
+		border-radius: 50%;
+		border-radius: 50%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    position: absolute;
+    	top: 20px;
+    	right: 20px;
+	}
+
+	.intro-text {
+		position: absolute;
+		left: 140px;
+    	top: 160px;
+		color: $soft-black;
+		width: 160px;
+    	font-size: 0.90em;
+    	a {
+    		color: $soft-black;
+    		transition: $transition;
+    		&:active, &:visited {
+    			color: $soft-black;
+    		}
+    		&:hover, &:focus {
+    			color: darken($soft-black, 50%);
+    		}
+    	}
+	}
+
 }
+
