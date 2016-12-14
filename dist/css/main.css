@@ -12,7 +12,8 @@
   font-family: "museo-sans", Helvetica, Arial, sans-serif; }
 
 body {
-  margin: 0px; }
+  margin: 0px;
+  background-color: black; }
 
 #attract {
   position: absolute;
@@ -62,10 +63,72 @@ body {
         color: black; }
 
 #scene {
-  background: url("../../assets/bkgr.png");
-  background-size: cover;
-  background-position: center center;
+  height: 100vh;
   width: 100vw;
-  height: 100vh; }
+  overflow: hidden; }
+
+#background {
+  position: relative;
+  width: 1200px;
+  margin: 0px auto; }
+  #background img {
+    width: 1200px;
+    height: auto; }
+
+#chair {
+  position: absolute;
+  left: 215px;
+  top: 228px; }
+  #chair img {
+    width: 211px; }
+
+#fireplace {
+  position: absolute;
+  left: 397px;
+  top: 310px; }
+  #fireplace img {
+    width: 315px; }
+
+#frame {
+  position: absolute;
+  left: 362px;
+  top: 35px; }
+  #frame img {
+    width: 461px; }
+
+#mantel {
+  position: absolute;
+  top: 25px;
+  left: 328px; }
+  #mantel img {
+    width: 550px; }
+
+#mantelGarland {
+  position: absolute;
+  top: 231px;
+  left: 349px; }
+  #mantelGarland img {
+    width: 500px; }
+
+#pet {
+  position: absolute;
+  top: 485px;
+  left: 299px; }
+  #pet img {
+    width: 575px; }
+
+#table {
+  position: absolute;
+  top: 247px;
+  left: 690px; }
+  #table img {
+    width: 233px; }
+
+#tree {
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+  #tree img {
+    width: 500px; }
 
 /*# sourceMappingURL=main.css.map */
