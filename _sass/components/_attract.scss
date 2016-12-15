@@ -8,6 +8,7 @@
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0,0,0,0.5);
+	z-index: 4;
 
 	.gift-tag-wrapper {
 		display: block;
@@ -15,12 +16,8 @@
     	position: relative;
     	left: -60px; // accounts for ribbon width
 	}
-
 	img {
-		// display: block;
 		width: 100%;
-  //   	position: relative;
-  //   	left: -60px; // accounts for ribbon width
 	}
 
 	#close {

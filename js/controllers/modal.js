@@ -11,15 +11,16 @@ Modal = (function() {
     }
 
     var showAttract = function() {
-    	$('#attract').removeClass('fade').addClass('in');
+    	$('#attract').removeClass('fade').addClass('in').css('z-index', '3');
 
     }
 
     var showScene = function() {
-    	$('#attract').addClass('fade').removeClass('in');
+    	$('#attract').addClass('fade').removeClass('in').css('z-index', '0');
     }
 
     return {
-        init: init
+        init: init,
+        showAttract: showAttract
     }
 })();

@@ -8,6 +8,11 @@
 .in {
   opacity: 1; }
 
+button {
+  background: none;
+  border: none;
+  cursor: pointer; }
+
 * {
   font-family: "museo-sans", Helvetica, Arial, sans-serif; }
 
@@ -24,7 +29,8 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4; }
   #attract .gift-tag-wrapper {
     display: block;
     width: 320px;
@@ -65,70 +71,65 @@ body {
 #scene {
   height: 100vh;
   width: 100vw;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  z-index: -1; }
 
 #background {
   position: relative;
-  width: 1200px;
-  margin: 0px auto; }
+  width: 1400px; }
   #background img {
-    width: 1200px;
+    width: 1400px;
     height: auto; }
 
+#chair, #fireplace, #mantel, #mantelGarland, #pet, #table, #tree {
+  position: absolute; }
+
+#chair, #fireplace, #mantel, #mantelGarland, #pet, #table {
+  z-index: 2; }
+
 #chair {
-  position: absolute;
-  left: 215px;
-  top: 228px; }
+  left: 253px;
+  top: 270px; }
   #chair img {
-    width: 211px; }
+    width: 240px; }
 
 #fireplace {
-  position: absolute;
-  left: 397px;
-  top: 310px; }
+  left: 479px;
+  top: 364px; }
   #fireplace img {
-    width: 315px; }
-
-#frame {
-  position: absolute;
-  left: 362px;
-  top: 35px; }
-  #frame img {
-    width: 461px; }
+    width: 345px; }
 
 #mantel {
-  position: absolute;
   top: 25px;
-  left: 328px; }
+  left: 367px; }
   #mantel img {
-    width: 550px; }
+    width: 654px; }
 
 #mantelGarland {
-  position: absolute;
-  top: 231px;
-  left: 349px; }
+  top: 269px;
+  left: 406px; }
   #mantelGarland img {
-    width: 500px; }
+    width: 589px; }
 
 #pet {
-  position: absolute;
-  top: 485px;
-  left: 299px; }
+  top: 566px;
+  left: 365px; }
   #pet img {
-    width: 575px; }
+    width: 655px; }
 
 #table {
-  position: absolute;
-  top: 247px;
-  left: 690px; }
+  top: 293px;
+  left: 800px; }
   #table img {
-    width: 233px; }
+    width: 266px; }
 
 #tree {
-  position: absolute;
-  top: 0px;
-  left: 0px; }
+  top: 43px;
+  left: 193px;
+  z-index: 1; }
   #tree img {
-    width: 500px; }
+    width: 280px; }
 
 /*# sourceMappingURL=main.css.map */
