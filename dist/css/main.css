@@ -78,7 +78,9 @@ body {
 
 #background {
   position: relative;
-  width: 1400px; }
+  width: 1400px;
+  position: relative;
+  top: -50px; }
   #background img {
     width: 1400px;
     height: auto; }
@@ -131,5 +133,15 @@ body {
   z-index: 1; }
   #tree img {
     width: 280px; }
+
+#icons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 75px;
+  z-index: 3; }
+  #icons button {
+    color: white;
+    background: red; }
 
 /*# sourceMappingURL=main.css.map */
