@@ -123,7 +123,8 @@ body {
 
 #table {
   top: 293px;
-  left: 800px; }
+  left: 800px;
+  width: 200px; }
   #table img {
     width: 266px; }
 
@@ -137,11 +138,22 @@ body {
 #icons {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   position: relative;
-  bottom: 75px;
+  bottom: 89px;
   z-index: 3; }
   #icons button {
     color: white;
-    background: red; }
+    background: red;
+    width: 100px;
+    height: 20px; }
+  #icons img {
+    width: 100px;
+    margin-right: 20px; }
+  #icons #twitter img {
+    position: relative;
+    bottom: 20px; }
+  #icons #info img {
+    margin-right: 0px; }
 
 /*# sourceMappingURL=main.css.map */

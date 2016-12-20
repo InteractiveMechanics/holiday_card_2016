@@ -70,6 +70,7 @@
 #table {
 	top: 293px;
     left: 800px;
+    width: 200px;
 	img {
 		width: 266px;
 	}
@@ -87,12 +88,29 @@
 #icons {
 	display: flex;
     justify-content: center;
+    align-items: flex-end;
     position: relative;
-    bottom: 75px;
+    bottom: 89px;
     z-index: 3;
 	button {
 		color: white;
 		background: red;
-
+		width: 100px;
+		height: 20px;
+	}
+	img {
+		width: 100px;
+		margin-right: 20px;
+	}
+	#twitter {
+		img {
+			position: relative;
+			bottom: 20px;
+		}
+	}
+	#info {
+		img {
+			margin-right: 0px;
+		}
 	}
 }
