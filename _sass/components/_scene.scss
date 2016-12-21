@@ -1,6 +1,6 @@
 #scene {
 	height: 100vh;
-	width: 100vw;
+	//width: 100vw;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
@@ -8,14 +8,17 @@
 }
 
 
+#scene-wrapper {
+	position: relative;
+	//height: 100%; add this for iPad
+}
+
 #background {
-	position: relative;
-	width: 1400px;
-	position: relative;
-    top: -50px;
+	display: flex;
+	height: 100%;
 	img {
-	width: 1400px;
-	height: auto;
+		height: 700px;
+		align-self: center;
 	}
 }
 
@@ -28,60 +31,59 @@
 }
 
 #chair {
-   	left: 253px;
-    top: 270px;
+   	left: 225px;
+    top: 241px;
 	img {
-		width: 240px;
+		width: 212px
 	}
 }
 
 #fireplace {
-	left: 479px;
-    top: 364px;
+	left: 419px;
+    top: 323px;
     img {
-    	width: 345px;
+    	width: 313px;
     }
 }
 
 #mantel {
-	top: 25px;
-    left: 367px;
+	top: 24px;
+    left: 330px;
 	img {
-		width: 654px;
+		width: 577px;
 	}
 }
 
 #mantelGarland {
-	top: 269px;
-    left: 406px;
+	top: 239px;
+    left: 362px;
 	img {
-		width: 589px;;
+		width: 521px;
 	}
 }
 
 #pet {
-	top: 566px;
-    left: 365px;
+	top: 501px;
+    left: 315px;
 	img {
-		width: 655px;;
+		width: 585px;
 	}
 }
 
 #table {
-	top: 293px;
-    left: 800px;
-    width: 200px;
+	top: 292px;
+    left: 723px;
 	img {
-		width: 266px;
+		width: 210px;
 	}
 }
 
 #tree {
-	top: 43px;
-	left: 193px;
+	top: 32px;
+    left: 168px;
 	z-index: 1;
 	img {
-		width: 280px;
+		width: 255px;
 	}
 }
 
@@ -90,7 +92,7 @@
     justify-content: center;
     align-items: flex-end;
     position: relative;
-    bottom: 89px;
+    bottom: 55px;
     z-index: 3;
 	button {
 		color: white;
@@ -99,18 +101,31 @@
 		height: 20px;
 	}
 	img {
-		width: 100px;
-		margin-right: 20px;
+		margin-right: 5px;
 	}
 	#twitter {
 		img {
 			position: relative;
 			bottom: 20px;
+			height: 35px;
+		}
+	}
+	#facebook {
+		img {
+			height: 55px;
+		}
+	}
+
+	#company {
+		img {
+			height: 50px;
 		}
 	}
 	#info {
 		img {
+			height: 50px;
 			margin-right: 0px;
+
 		}
 	}
 }

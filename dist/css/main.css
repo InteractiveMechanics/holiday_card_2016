@@ -18,8 +18,55 @@ button {
 
 body {
   margin: 0px;
-  background-color: black; }
+  background-color: #000000; }
 
+#snow-wrapper {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+#snow {
+  background-color: #4D626B;
+  background-image: url("http://www.wearewebstars.dk/codepen/img/s1.png"), url("http://www.wearewebstars.dk/codepen/img//s2.png"), url("http://www.wearewebstars.dk/codepen/img//s3.png");
+  width: 100%;
+  height: 700px;
+  z-index: -1;
+  align-self: center;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite; }
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px; }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px; }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px; } }
+@-moz-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px; }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px; }
+  100% {
+    background-position: 400px 1000px, 200px 400px, 100px 300px; } }
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px; }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px; }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px; } }
+@-ms-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px; }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px; }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px; } }
 #attract {
   position: absolute;
   top: 0;
@@ -70,20 +117,20 @@ body {
 
 #scene {
   height: 100vh;
-  width: 100vw;
   overflow: hidden;
   display: flex;
   justify-content: center;
   z-index: -1; }
 
+#scene-wrapper {
+  position: relative; }
+
 #background {
-  position: relative;
-  width: 1400px;
-  position: relative;
-  top: -50px; }
+  display: flex;
+  height: 100%; }
   #background img {
-    width: 1400px;
-    height: auto; }
+    height: 700px;
+    align-self: center; }
 
 #chair, #fireplace, #mantel, #mantelGarland, #pet, #table, #tree {
   position: absolute; }
@@ -92,55 +139,54 @@ body {
   z-index: 2; }
 
 #chair {
-  left: 253px;
-  top: 270px; }
+  left: 225px;
+  top: 241px; }
   #chair img {
-    width: 240px; }
+    width: 212px; }
 
 #fireplace {
-  left: 479px;
-  top: 364px; }
+  left: 419px;
+  top: 323px; }
   #fireplace img {
-    width: 345px; }
+    width: 313px; }
 
 #mantel {
-  top: 25px;
-  left: 367px; }
+  top: 24px;
+  left: 330px; }
   #mantel img {
-    width: 654px; }
+    width: 577px; }
 
 #mantelGarland {
-  top: 269px;
-  left: 406px; }
+  top: 239px;
+  left: 362px; }
   #mantelGarland img {
-    width: 589px; }
+    width: 521px; }
 
 #pet {
-  top: 566px;
-  left: 365px; }
+  top: 501px;
+  left: 315px; }
   #pet img {
-    width: 655px; }
+    width: 585px; }
 
 #table {
-  top: 293px;
-  left: 800px;
-  width: 200px; }
+  top: 292px;
+  left: 723px; }
   #table img {
-    width: 266px; }
+    width: 210px; }
 
 #tree {
-  top: 43px;
-  left: 193px;
+  top: 32px;
+  left: 168px;
   z-index: 1; }
   #tree img {
-    width: 280px; }
+    width: 255px; }
 
 #icons {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  bottom: 89px;
+  bottom: 55px;
   z-index: 3; }
   #icons button {
     color: white;
@@ -148,12 +194,17 @@ body {
     width: 100px;
     height: 20px; }
   #icons img {
-    width: 100px;
-    margin-right: 20px; }
+    margin-right: 5px; }
   #icons #twitter img {
     position: relative;
-    bottom: 20px; }
+    bottom: 20px;
+    height: 35px; }
+  #icons #facebook img {
+    height: 55px; }
+  #icons #company img {
+    height: 50px; }
   #icons #info img {
+    height: 50px;
     margin-right: 0px; }
 
 /*# sourceMappingURL=main.css.map */

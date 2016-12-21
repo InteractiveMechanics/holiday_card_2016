@@ -56,7 +56,10 @@ Hotspots = (function() {
         $(document).on('click tap', '.table', nextImg);
         $(document).on('click tap', '.tree', nextImg);
         $(document).on('click tap', '#testingBtn', getIndex);
-        
+        $(document).on('click tap', '#twitter', sendTweet);
+        $(document).on('click tap', '#facebook', sendFacebook);
+        $(document).on('click tap', '#company', openIM);
+        $(document).on('click tap', '#info', Modal.showAttract);
     }
 
     var nextImg = function() {
@@ -89,20 +92,32 @@ Hotspots = (function() {
     	tableIndex = $('#table img.active').index();
     	treeIndex = $('#tree img.active').index();
 
-    	if (myArray === !undefined || myArray.length == !0) {
-    		myArray.splice(0, 7, chairIndex, fireplaceIndex, mantelIndex, mantelGarlandIndex, petIndex, tableIndex, treeIndex);
+    	if (myArray === !undefined || myArray.length > 0) {
+    		myArray.splice(1, 7, chairIndex, fireplaceIndex, mantelIndex, mantelGarlandIndex, petIndex, tableIndex, treeIndex);
     	} else {
     		myArray.push(chairIndex, fireplaceIndex, mantelIndex, mantelGarlandIndex, petIndex, tableIndex, treeIndex);
     	}
-
-    	
-        
-      
-
-    	// alert('myArray: ' + myArray);
     }
 
     var facebooklink = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
+
+    // var twitterlink = 'https://twitter.com/home?status=Happy%202017%20from%20%40InteractiveMech!%20' + window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
+
+    var sendTweet = function() {
+        getIndex();
+        var twitterlink = 'https://twitter.com/home?status=Happy%202017%20from%20%40InteractiveMech!%20' + window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
+        window.open(twitterlink,'_blank');
+    }
+
+    var sendFacebook = function() {
+        getIndex();
+        var facebooklink = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
+        window.open(facebooklink, '_blank');
+    }
+
+    var openIM = function() {
+        window.open('http://www.interactivemechanics.com', '_blank');
+    }
 
     var updateURL = function() {
     	var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
