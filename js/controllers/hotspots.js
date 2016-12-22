@@ -105,7 +105,7 @@ Hotspots = (function() {
 
     var sendTweet = function() {
         getIndex();
-        var twitterlink = 'https://twitter.com/home?status=Happy%202017%20from%20%40InteractiveMech!%20' + window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
+        var twitterlink = 'https://twitter.com/home?status=Check%20out%20my%20custom%20New%20Year%E2%80%99s%20scene%20%26%20design%20your%20own%202017%20with%20%40InteractiveMech%20%23happynewyear%20%23newyeardoyou%0A' + window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
         window.open(twitterlink,'_blank');
     }
 

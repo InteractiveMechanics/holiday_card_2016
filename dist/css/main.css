@@ -106,7 +106,7 @@ body {
     top: 160px;
     color: #5f5e5e;
     width: 160px;
-    font-size: 0.90em; }
+    font-size: 1.05em; }
     #attract .intro-text a {
       color: #5f5e5e;
       transition: all 0.5s; }
@@ -132,7 +132,7 @@ body {
     height: 700px;
     align-self: center; }
 
-#chair, #fireplace, #mantel, #mantelGarland, #pet, #table, #tree {
+#chair, #fireplace, #fire-wrapper, #mantel, #mantelGarland, #pet, #table, #tree {
   position: absolute; }
 
 #chair, #fireplace, #mantel, #mantelGarland, #pet, #table {
@@ -149,6 +149,12 @@ body {
   top: 323px; }
   #fireplace img {
     width: 313px; }
+
+#fire-wrapper {
+  border: 1px solid red;
+  left: 508px;
+  top: 341px;
+  z-index: 0; }
 
 #mantel {
   top: 24px;
