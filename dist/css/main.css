@@ -132,7 +132,7 @@ body {
     height: 700px;
     align-self: center; }
 
-#chair, #fireplace, #fire-wrapper, #mantel, #mantelGarland, #pet, #table, #tree {
+#chair, #fireplace, #fire, #mantel, #mantelGarland, #pet, #table, #tree {
   position: absolute; }
 
 #chair, #fireplace, #mantel, #mantelGarland, #pet, #table {
@@ -150,11 +150,14 @@ body {
   #fireplace img {
     width: 313px; }
 
-#fire-wrapper {
-  border: 1px solid red;
-  left: 508px;
-  top: 341px;
-  z-index: 0; }
+#fire {
+  left: 528px;
+  top: 346px;
+  z-index: 0;
+  width: 109px;
+  height: 145px;
+  background: url(../../assets/fire.png);
+  animation: play 0.7s steps(8, start) infinite; }
 
 #mantel {
   top: 24px;
@@ -212,5 +215,11 @@ body {
   #icons #info img {
     height: 50px;
     margin-right: 0px; }
+
+@keyframes play {
+  from {
+    background-position: 0px 0; }
+  to {
+    background-position: -900px 0; } }
 
 /*# sourceMappingURL=main.css.map */
