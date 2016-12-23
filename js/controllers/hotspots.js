@@ -56,7 +56,7 @@ Hotspots = (function() {
         $(document).on('click tap', '.table', nextImg);
         $(document).on('click tap', '.tree', nextImg);
         $(document).on('click tap', '#testingBtn', getIndex);
-        $(document).on('click tap', '#twitter', sendTweet);
+        $(document).on('click tap', '#twitter', sendToTwitter);
         $(document).on('click tap', '#facebook', sendFacebook);
         $(document).on('click tap', '#company', openIM);
         $(document).on('click tap', '#info', Modal.showAttract);
@@ -106,7 +106,8 @@ Hotspots = (function() {
     var sendTweet = function() {
         getIndex();
         var twitterlink = 'https://twitter.com/home?status=Check%20out%20my%20custom%20New%20Year%E2%80%99s%20scene%20%26%20design%20your%20own%202017%20with%20%40InteractiveMech%20%23happynewyear%20%23newyeardoyou%0A' + window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
-        window.open(twitterlink,'_blank');
+        //window.open(twitterlink,'_blank');
+        sendToTwitter();
     }
 
     var sendFacebook = function() {
@@ -124,6 +125,31 @@ Hotspots = (function() {
         window.history.pushState({path:newurl},'',newurl);
     }
 
+    function sendToTwitter() {
+    getIndex();
+     var twitterlink = window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
+    console.log(twitterlink);
+
+        $.getJSON(
+            "http://api.bitly.com/v3/shorten?callback=?", 
+            { 
+                "format": "json",
+                "apiKey": 'R_30cf111a2946e769b75c67455f4b0f07',
+                "login": 'o_1amtpj9r2u',
+                "longUrl": twitterlink
+            },
+            function(response)
+            {
+                openTwitterLink(response.data.url);
+                console.log(response);
+            }
+        );
+    }
+
+    function openTwitterLink(shorten_url) {
+    var url = "https://twitter.com/home?status=Check%20out%20my%20custom%20New%20Year%E2%80%99s%20scene%20%26%20design%20your%20own%202017%20with%20%40InteractiveMech%20%23happynewyear%20%23newyeardoyou%0A" + shorten_url;
+    window.open(url,'_blank');
+}
     
 
 

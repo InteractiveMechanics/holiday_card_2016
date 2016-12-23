@@ -36,6 +36,13 @@
 	position: absolute;
 }
 
+#chair, #fireplace, #mantel, #mantelGarland, #pet, #table, #tree {
+	transition: $transition;
+	&:hover, &:active {
+		filter: drop-shadow(5px 5px 3px rgba(255, 255, 153, 0.75));
+	}
+}
+
 #chair, #fireplace, #mantel, #mantelGarland, #pet, #table {
 	z-index: 2;
 }

@@ -143,6 +143,11 @@ body {
 #chair, #fireplace, #fire, #mantel, #mantelGarland, #pet, #table, #tree {
   position: absolute; }
 
+#chair, #fireplace, #mantel, #mantelGarland, #pet, #table, #tree {
+  transition: all 0.5s; }
+  #chair:hover, #chair:active, #fireplace:hover, #fireplace:active, #mantel:hover, #mantel:active, #mantelGarland:hover, #mantelGarland:active, #pet:hover, #pet:active, #table:hover, #table:active, #tree:hover, #tree:active {
+    filter: drop-shadow(5px 5px 3px rgba(255, 255, 153, 0.75)); }
+
 #chair, #fireplace, #mantel, #mantelGarland, #pet, #table {
   z-index: 2; }
 
