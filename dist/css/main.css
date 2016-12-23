@@ -132,6 +132,14 @@ body {
     height: 700px;
     align-self: center; }
 
+#glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.5)); }
+
 #chair, #fireplace, #fire, #mantel, #mantelGarland, #pet, #table, #tree {
   position: absolute; }
 
