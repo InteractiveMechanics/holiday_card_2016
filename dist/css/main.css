@@ -131,13 +131,19 @@ body {
   #background img {
     height: 700px;
     align-self: center; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #background img {
+        height: 768px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #background img {
+        height: 600px; } }
 
 #glow {
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.5)); }
 
 #chair, #fireplace, #fire, #mantel, #mantelGarland, #pet, #table, #tree {
@@ -154,14 +160,42 @@ body {
 #chair {
   left: 225px;
   top: 241px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #chair {
+      left: 247px;
+      top: 263px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #chair {
+      left: 187px;
+      top: 179px; } }
   #chair img {
     width: 212px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #chair img {
+        width: 235px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #chair img {
+        width: 185px; } }
 
 #fireplace {
   left: 419px;
   top: 323px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #fireplace {
+      left: 463px;
+      top: 356px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #fireplace {
+      left: 352px;
+      top: 251px; } }
   #fireplace img {
     width: 313px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #fireplace img {
+        width: 336px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #fireplace img {
+        width: 281px; } }
 
 #fire {
   left: 528px;
@@ -175,33 +209,103 @@ body {
 #mantel {
   top: 24px;
   left: 330px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #mantel {
+      top: 29px;
+      left: 366px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #mantel {
+      top: -5px;
+      left: 280px; } }
   #mantel img {
     width: 577px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #mantel img {
+        width: 629px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #mantel img {
+        width: 501px; } }
 
 #mantelGarland {
   top: 239px;
   left: 362px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #mantelGarland {
+      top: 265px;
+      left: 401px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #mantelGarland {
+      top: 182px;
+      left: 311px; } }
   #mantelGarland img {
     width: 521px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #mantelGarland img {
+        width: 567px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #mantelGarland img {
+        width: 445px; } }
 
 #pet {
   top: 501px;
   left: 315px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #pet {
+      top: 557px;
+      left: 361px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #pet {
+      top: 405px;
+      left: 263px; } }
   #pet img {
     width: 585px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #pet img {
+        width: 608px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #pet img {
+        width: 515px; } }
 
 #table {
   top: 292px;
   left: 723px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #table {
+      top: 312px;
+      left: 798px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #table {
+      top: 241px;
+      left: 634px; } }
   #table img {
     width: 210px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #table img {
+        width: 237px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #table img {
+        width: 170px; } }
 
 #tree {
   top: 32px;
   left: 168px;
   z-index: 1; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #tree {
+      top: 37px;
+      left: 211px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #tree {
+      top: -16px;
+      left: 135px; } }
   #tree img {
     width: 255px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #tree img {
+        width: 277px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #tree img {
+        width: 225px; } }
 
 #icons {
   display: flex;
@@ -210,29 +314,53 @@ body {
   position: relative;
   bottom: 55px;
   z-index: 3; }
-  #icons button {
-    color: white;
-    background: red;
-    width: 100px;
-    height: 20px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #icons {
+      bottom: 50px; } }
   #icons img {
     margin-right: 5px; }
   #icons #twitter img {
     position: relative;
     bottom: 20px;
     height: 35px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #icons #twitter img {
+        height: 30px; } }
   #icons #facebook img {
     height: 55px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #icons #facebook img {
+        height: 50px; } }
   #icons #company img {
     height: 50px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #icons #company img {
+        height: 45px; } }
   #icons #info img {
     height: 50px;
     margin-right: 0px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #icons #info img {
+        height: 45px; } }
 
 @keyframes play {
   from {
     background-position: 0px 0; }
   to {
     background-position: -900px 0; } }
+#checkscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #checkscreen h3 {
+    text-transform: uppercase;
+    width: 60%; }
 
 /*# sourceMappingURL=main.css.map */

@@ -10,7 +10,6 @@
 
 #scene-wrapper {
 	position: relative;
-	//height: 100%; add this for iPad
 }
 
 #background {
@@ -19,6 +18,12 @@
 	img {
 		height: 700px;
 		align-self: center;
+		@include screen-md {
+			height: 768px;
+		}
+		@include screen-sm {
+			height: 600px;
+		}
 	}
 }
 
@@ -27,7 +32,7 @@
 	top: 0;
 	left: 0;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	background: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0, 0.5));
 }
 
@@ -50,16 +55,44 @@
 #chair {
    	left: 225px;
     top: 241px;
+    @include screen-md {
+    	left: 247px;
+    	top: 263px;
+    }
+    @include screen-sm {
+    	left: 187px;
+    	top: 179px;
+    }
 	img {
-		width: 212px
+		width: 212px;
+		@include screen-md {
+			width: 235px;
+		}
+		@include screen-sm {
+			width: 185px;
+		}
 	}
 }
 
 #fireplace {
 	left: 419px;
     top: 323px;
+    @include screen-md {
+    	left: 463px;
+    	top: 356px;
+    }
+    @include screen-sm {
+    	left: 352px;
+    	top: 251px;
+    }
     img {
     	width: 313px;
+    	@include screen-md {
+    		width: 336px;
+    	}
+    	@include screen-sm {
+    		width: 281px;
+    	}
     }
 }
 
@@ -77,32 +110,88 @@
 #mantel {
 	top: 24px;
     left: 330px;
+    @include screen-md {
+    	top: 29px;
+    	left: 366px;
+    }
+    @include screen-sm {
+    	top: -5px;
+    	left: 280px;
+    }
 	img {
 		width: 577px;
+		@include screen-md {
+			width: 629px;
+		}
+		@include screen-sm {
+			width: 501px;
+		}
 	}
 }
 
 #mantelGarland {
 	top: 239px;
     left: 362px;
+    @include screen-md {
+    	top: 265px;
+    	left: 401px;
+    }
+    @include screen-sm {
+    	top: 182px;
+    	left: 311px;
+    }
 	img {
 		width: 521px;
+		@include screen-md {
+			width: 567px;
+		}
+		@include screen-sm {
+			width: 445px;
+		}
 	}
 }
 
 #pet {
 	top: 501px;
     left: 315px;
+    @include screen-md {
+    	top: 557px;
+    	left: 361px;
+    }
+    @include screen-sm {
+    	top: 405px;
+    	left: 263px;
+    }
 	img {
 		width: 585px;
+		@include screen-md {
+			width: 608px;
+		}
+		@include screen-sm {
+			width: 515px;
+		}
 	}
 }
 
 #table {
 	top: 292px;
     left: 723px;
+    @include screen-md {
+    	top: 312px;
+    	left: 798px;
+    }
+    @include screen-sm {
+    	top: 241px;
+    	left: 634px;
+    }
 	img {
 		width: 210px;
+		@include screen-md {
+			width: 237px;
+		}
+		@include screen-sm {
+			width: 170px;
+		}
 	}
 }
 
@@ -110,8 +199,22 @@
 	top: 32px;
     left: 168px;
 	z-index: 1;
+	@include screen-md {
+		top: 37px;
+		left: 211px;
+	}
+	@include screen-sm {
+		top: -16px;
+    	left: 135px;
+	}
 	img {
 		width: 255px;
+		@include screen-md {
+			width: 277px;
+		}
+		@include screen-sm {
+			width: 225px;
+		}
 	}
 }
 
@@ -122,12 +225,9 @@
     position: relative;
     bottom: 55px;
     z-index: 3;
-	button {
-		color: white;
-		background: red;
-		width: 100px;
-		height: 20px;
-	}
+    @include screen-sm {
+    	bottom: 50px;
+    }
 	img {
 		margin-right: 5px;
 	}
@@ -136,23 +236,35 @@
 			position: relative;
 			bottom: 20px;
 			height: 35px;
+			@include screen-sm {
+				height: 30px;
+			}
 		}
 	}
 	#facebook {
 		img {
 			height: 55px;
+			@include screen-sm {
+				height: 50px;
+			}
 		}
 	}
 
 	#company {
 		img {
 			height: 50px;
+			@include screen-sm {
+				height: 45px;
+			}
 		}
 	}
 	#info {
 		img {
 			height: 50px;
 			margin-right: 0px;
+			@include screen-sm {
+				height: 45px;
+			}
 
 		}
 	}
