@@ -27,17 +27,22 @@ body {
   top: 0;
   width: 100%; }
 
-#snow {
+#snow, .snow2 {
   background-color: #4D626B;
   background-image: url("http://www.wearewebstars.dk/codepen/img/s1.png"), url("http://www.wearewebstars.dk/codepen/img//s2.png"), url("http://www.wearewebstars.dk/codepen/img//s3.png");
   width: 100%;
-  height: 700px;
-  z-index: -1;
   align-self: center;
   -webkit-animation: snow 10s linear infinite;
   -moz-animation: snow 10s linear infinite;
   -ms-animation: snow 10s linear infinite;
   animation: snow 10s linear infinite; }
+
+#snow {
+  height: 700px;
+  z-index: -1; }
+
+.snow2 {
+  height: 100vh; }
 
 @keyframes snow {
   0% {
@@ -123,7 +128,15 @@ body {
   z-index: -1; }
 
 #scene-wrapper {
-  position: relative; }
+  position: relative;
+  height: auto;
+  height: 700px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #scene-wrapper {
+      height: 768px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #scene-wrapper {
+      height: 600px; } }
 
 #background {
   display: flex;
@@ -307,6 +320,13 @@ body {
       #tree img {
         width: 225px; } }
 
+#twitter, #facebook, #company, #info {
+  transition: all 0.5s; }
+  #twitter:hover, #twitter:active, #facebook:hover, #facebook:active, #company:hover, #company:active, #info:hover, #info:active {
+    filter: drop-shadow(5px 5px 3px rgba(35, 134, 38, 0.75));
+    box-shadow: 0px 3px 0px transparent;
+    transform: translate(0px, -3px); }
+
 #icons {
   display: flex;
   justify-content: center;
@@ -355,12 +375,11 @@ body {
   height: 100vh;
   width: 100%;
   background: #000000;
-  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center; }
   #checkscreen h3 {
     text-transform: uppercase;
-    width: 60%; }
+    font-size: 3em; }
 
 /*# sourceMappingURL=main.css.map */

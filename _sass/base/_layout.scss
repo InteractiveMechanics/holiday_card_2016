@@ -11,17 +11,24 @@ body {
     width: 100%;
 }
 
-#snow {
+#snow, .snow2 {
 	background-color: #4D626B;
 	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
 	width: 100%;
-	height: 700px;
-  z-index: -1;
   align-self: center;
 	-webkit-animation: snow 10s linear infinite;
 	-moz-animation: snow 10s linear infinite;
 	-ms-animation: snow 10s linear infinite;
 	animation: snow 10s linear infinite;
+}
+
+#snow {
+  height: 700px;
+  z-index: -1;
+}
+
+.snow2 {
+  height: 100vh;
 }
 
 
