@@ -27,8 +27,10 @@ Modal = (function() {
     var checkScreen = function() {
         if(window.innerHeight > window.innerWidth) {
             $('#checkscreen').removeClass('fade').addClass('in');
+            $('#checkscreen').css('z-index', '3');
         } else {
             $('#checkscreen').addClass('fade').removeClass('in');
+            $('#checkscreen').css('z-index', '-2');
         }
     }
 
