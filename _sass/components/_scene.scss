@@ -32,6 +32,8 @@
 		}
 		@include screen-sm {
 			height: 600px;
+			position: relative;
+			top: -27px;
 		}
 	}
 }
@@ -70,7 +72,7 @@
     }
     @include screen-sm {
     	left: 187px;
-    	top: 179px;
+    	top: 178px;
     }
 	img {
 		width: 212px;
@@ -114,6 +116,14 @@
     height: 145px;
     background: url(../../assets/fire.png);
     animation: play 0.7s steps(8, start) infinite;
+    @include screen-md {
+    	left: 587px;
+    	top: 386px;
+    }
+    @include screen-sm {
+    	left: 447px;
+    	top: 244px;
+    }
 }
 
 #mantel {
@@ -244,7 +254,7 @@
     bottom: 55px;
     z-index: 3;
     @include screen-sm {
-    	bottom: 50px;
+    	bottom: 100px;
     }
 	img {
 		margin-right: 5px;

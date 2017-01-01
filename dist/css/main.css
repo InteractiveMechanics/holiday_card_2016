@@ -149,7 +149,9 @@ body {
         height: 768px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       #background img {
-        height: 600px; } }
+        height: 600px;
+        position: relative;
+        top: -27px; } }
 
 #glow {
   position: absolute;
@@ -180,7 +182,7 @@ body {
   @media (min-width: 768px) and (max-width: 991px) {
     #chair {
       left: 187px;
-      top: 179px; } }
+      top: 178px; } }
   #chair img {
     width: 212px; }
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -218,6 +220,14 @@ body {
   height: 145px;
   background: url(../../assets/fire.png);
   animation: play 0.7s steps(8, start) infinite; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #fire {
+      left: 587px;
+      top: 386px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #fire {
+      left: 447px;
+      top: 244px; } }
 
 #mantel {
   top: 24px;
@@ -336,7 +346,7 @@ body {
   z-index: 3; }
   @media (min-width: 768px) and (max-width: 991px) {
     #icons {
-      bottom: 50px; } }
+      bottom: 100px; } }
   #icons img {
     margin-right: 5px; }
   #icons #twitter img {
