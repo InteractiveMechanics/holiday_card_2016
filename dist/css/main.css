@@ -125,7 +125,8 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  z-index: -1; }
+  z-index: -1;
+  position: relative; }
 
 #scene-wrapper {
   position: relative;
@@ -341,17 +342,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  position: relative;
-  bottom: 55px;
+  position: absolute;
+  bottom: 5px;
   z-index: 3; }
   @media (min-width: 768px) and (max-width: 991px) {
     #icons {
-      bottom: 100px; } }
+      bottom: 0px; } }
   #icons img {
     margin-right: 5px; }
   #icons #twitter img {
     position: relative;
-    bottom: 20px;
     height: 35px; }
     @media (min-width: 768px) and (max-width: 991px) {
       #icons #twitter img {

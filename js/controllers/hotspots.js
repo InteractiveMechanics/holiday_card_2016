@@ -114,7 +114,8 @@ Hotspots = (function() {
 
     var sendFacebook = function() {
         getIndex();
-        var facebooklink = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
+        //var facebooklink = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray;
+        var facebooklink = 'https://www.facebook.com/dialog/feed?app_id=184683071273&link=' +  window.location.protocol + "//" + window.location.host + window.location.pathname + '?settings=' + myArray; + '%2FHoliday2016%2Fassets%2F2016-12-16_HolidayCard-Philly_v01_bkgr.jpg&name=%23newyeardoyou&caption=%20&description=Check%20out%20my%20custom%20New%20Year%E2%80%99s%20scene%20%26%20design%20your%20own%202017%20with%20%40InteractiveMech%20%23happynewyear%20%23newyeardoyou&redirect_uri=http%3A%2F%2Fwww.facebook.com%2F'
         window.open(facebooklink, '_blank');
     }
 

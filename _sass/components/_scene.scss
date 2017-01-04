@@ -5,6 +5,7 @@
 	display: flex;
 	justify-content: center;
 	z-index: -1;
+	position: relative;
 }
 
 
@@ -248,13 +249,13 @@
 
 #icons {
 	display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    position: relative;
-    bottom: 55px;
+ 	justify-content: center;
+ 	align-items: flex-end;
+ 	position: absolute; //relative
+    bottom: 5px; //55px
     z-index: 3;
     @include screen-sm {
-    	bottom: 100px;
+    	bottom: 0px;
     }
 	img {
 		margin-right: 5px;
@@ -262,7 +263,7 @@
 	#twitter {
 		img {
 			position: relative;
-			bottom: 20px;
+			//bottom: 20px;
 			height: 35px;
 			@include screen-sm {
 				height: 30px;
