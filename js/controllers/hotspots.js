@@ -10,14 +10,16 @@ Hotspots = (function() {
         var settingsArray = settingsString.split(',');
         if (settingsString.length == 0 || settingsString == null) {
             setDefaultScene();
+            sendGAEvent('settings' + settingsArray);
         } else {
             $('#chair img:eq(' + validateSettings(settingsArray[0]) + ')').addClass('active in').removeClass('hidden fade');
-            $('#fireplace img:eq(' + validateSettings(settingsArray[0]) + ')').addClass('active in').removeClass('hidden fade');
-            $('#mantel img:eq(' + validateSettings(settingsArray[0]) + ')').addClass('active in').removeClass('hidden fade');
-            $('#mantelGarland img:eq(' + validateSettings(settingsArray[0]) + ')').addClass('active in').removeClass('hidden fade');
-            $('#pet img:eq(' + validateSettings(settingsArray[0]) + ')').addClass('active in').removeClass('hidden fade');
-            $('#table img:eq(' + validateSettings(settingsArray[0]) + ')').addClass('active in').removeClass('hidden fade');
-            $('#tree img:eq(' + validateSettings(settingsArray[0]) + ')').addClass('active in').removeClass('hidden fade');
+            $('#fireplace img:eq(' + validateSettings(settingsArray[1]) + ')').addClass('active in').removeClass('hidden fade');
+            $('#mantel img:eq(' + validateSettings(settingsArray[2]) + ')').addClass('active in').removeClass('hidden fade');
+            $('#mantelGarland img:eq(' + validateSettings(settingsArray[3]) + ')').addClass('active in').removeClass('hidden fade');
+            $('#pet img:eq(' + validateSettings(settingsArray[4]) + ')').addClass('active in').removeClass('hidden fade');
+            $('#table img:eq(' + validateSettings(settingsArray[5]) + ')').addClass('active in').removeClass('hidden fade');
+            $('#tree img:eq(' + validateSettings(settingsArray[6]) + ')').addClass('active in').removeClass('hidden fade');
+            sendGAEvent('settings' + settingsArray);
         }
     }
 

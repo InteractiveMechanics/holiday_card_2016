@@ -107,10 +107,10 @@ body {
     right: 20px; }
   #attract .intro-text {
     position: absolute;
-    left: 140px;
-    top: 160px;
+    left: 136px;
+    top: 170px;
     color: #5f5e5e;
-    width: 160px;
+    width: 161px;
     font-size: 1.05em; }
     #attract .intro-text a {
       color: #5f5e5e;
@@ -389,7 +389,6 @@ body {
   justify-content: center;
   align-items: center; }
   #checkscreen h3 {
-    text-transform: uppercase;
     font-size: 3em; }
 
 /*# sourceMappingURL=main.css.map */
