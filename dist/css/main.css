@@ -111,7 +111,9 @@ body {
     top: 170px;
     color: #5f5e5e;
     width: 161px;
-    font-size: 1.05em; }
+    font-size: 0.9em;
+    line-height: 1.6;
+    text-align: center; }
     #attract .intro-text a {
       color: #5f5e5e;
       transition: all 0.5s; }
@@ -125,8 +127,7 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  z-index: -1;
-  position: relative; }
+  z-index: -1; }
 
 #scene-wrapper {
   position: relative;
@@ -163,7 +164,8 @@ body {
   background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.5)); }
 
 #chair, #fireplace, #fire, #mantel, #mantelGarland, #pet, #table, #tree {
-  position: absolute; }
+  position: absolute;
+  cursor: pointer; }
 
 #chair, #fireplace, #mantel, #mantelGarland, #pet, #table, #tree {
   transition: all 0.5s; }
@@ -349,7 +351,8 @@ body {
     #icons {
       bottom: 0px; } }
   #icons img {
-    margin-right: 5px; }
+    margin-right: 5px;
+    cursor: pointer; }
   #icons #twitter img {
     position: relative;
     height: 35px; }

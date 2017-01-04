@@ -5,7 +5,6 @@
 	display: flex;
 	justify-content: center;
 	z-index: -1;
-	position: relative;
 }
 
 
@@ -51,6 +50,7 @@
 
 #chair, #fireplace, #fire, #mantel, #mantelGarland, #pet, #table, #tree {
 	position: absolute;
+	cursor: pointer;
 }
 
 #chair, #fireplace, #mantel, #mantelGarland, #pet, #table, #tree {
@@ -259,6 +259,7 @@
     }
 	img {
 		margin-right: 5px;
+		cursor: pointer;
 	}
 	#twitter {
 		img {
