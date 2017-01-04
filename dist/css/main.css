@@ -346,7 +346,8 @@ body {
   align-items: flex-end;
   position: absolute;
   bottom: 5px;
-  z-index: 3; }
+  z-index: 3;
+  width: 100%; }
   @media (min-width: 768px) and (max-width: 991px) {
     #icons {
       bottom: 0px; } }
