@@ -133,7 +133,7 @@ Hotspots = (function() {
     }
 
     function openFbLink(shorten_url) {
-    var url = "https://www.facebook.com/dialog/feed?app_id=184683071273&link=&picture=&name=&caption=%20&description=Check%20out%20my%20custom%20New%20Year%E2%80%99s%20scene%20%26%20design%20your%20own%202017%20with%20%40InteractiveMech%20%23happynewyear%20%23newyeardoyou&redirect_uri=http%3A%2F%2Fwww.facebook.com%2F" + shorten_url;
+    var url = "https://www.facebook.com/sharer/sharer.php?u=" + shorten_url;
     window.open(url,'_blank');
 
     }

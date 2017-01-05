@@ -26,7 +26,7 @@ body {
   height: 700px;
   z-index: -1;
   @include screen-sm {
-    height: 600px;
+    height: 400px;
   }
 }
 
