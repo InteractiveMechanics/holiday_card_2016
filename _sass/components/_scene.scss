@@ -12,7 +12,7 @@
 	position: relative;
 	height: auto;
 	height: 700px;
-	@include screen-ipad {
+	@include screen-md {
 		height: 768px;
 
 	}
@@ -265,7 +265,7 @@
 		display: inline-flex;
 		list-style-type: none;
 		position: relative;
-		bottom: 35px;
+		bottom: 70px;
 	}
 	#icons-left {
 		left: -150px;
