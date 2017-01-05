@@ -12,7 +12,7 @@
 	position: relative;
 	height: auto;
 	height: 700px;
-	@include screen-md {
+	@include screen-ipad {
 		height: 768px;
 
 	}
@@ -250,7 +250,6 @@
 #icons {
 	display: flex;
 	justify-content: center;
-	align-items: flex-end;
 	position: absolute;
 	bottom: 5px;
 	z-index: 3;
@@ -261,6 +260,18 @@
 	img {
 		margin-right: 5px;
 		cursor: pointer;
+	}
+	#icons-left, #icons-right {
+		display: inline-flex;
+		list-style-type: none;
+		position: relative;
+		bottom: 35px;
+	}
+	#icons-left {
+		left: -150px;
+	}
+	#icons-right {
+		left: 75px;
 	}
 	#twitter {
 		img {

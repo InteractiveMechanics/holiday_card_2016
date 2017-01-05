@@ -9,6 +9,7 @@ $screen-xxs:        'max-width: 480px';
 $screen-xs:         'max-width: 767px';
 $screen-sm:         'min-width: 768px) and (max-width: 991px';        // These are the precanned bootstrap queries, plus a few extras for fine tuning
 $screen-md:         'min-width: 992px) and (max-width: 1199px';
+$screen-ipad:		'min-device-width: 992px) and (max-device-width: 1199px';
 $screen-lg:         'min-width: 1200px) and (max-width: 1439px';
 $screen-xl:         'min-width: 1440px';
 

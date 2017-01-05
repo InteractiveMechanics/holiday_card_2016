@@ -133,7 +133,7 @@ body {
   position: relative;
   height: auto;
   height: 700px; }
-  @media (min-width: 992px) and (max-width: 1199px) {
+  @media (min-device-width: 992px) and (max-device-width: 1199px) {
     #scene-wrapper {
       height: 768px; } }
   @media (min-width: 768px) and (max-width: 991px) {
@@ -343,7 +343,6 @@ body {
 #icons {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   position: absolute;
   bottom: 5px;
   z-index: 3;
@@ -354,6 +353,15 @@ body {
   #icons img {
     margin-right: 5px;
     cursor: pointer; }
+  #icons #icons-left, #icons #icons-right {
+    display: inline-flex;
+    list-style-type: none;
+    position: relative;
+    bottom: 35px; }
+  #icons #icons-left {
+    left: -150px; }
+  #icons #icons-right {
+    left: 75px; }
   #icons #twitter img {
     position: relative;
     height: 35px; }
