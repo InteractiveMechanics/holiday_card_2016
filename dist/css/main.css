@@ -40,6 +40,9 @@ body {
 #snow {
   height: 700px;
   z-index: -1; }
+  @media (min-width: 768px) and (max-width: 981px) {
+    #snow {
+      height: 600px; } }
 
 .snow2 {
   height: 100vh; }
