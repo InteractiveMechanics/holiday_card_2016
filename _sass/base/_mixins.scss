@@ -24,13 +24,6 @@
   }
 }
 
-@mixin screen-ipad {
-  @media (#{$screen-ipad}) {
-    @content;
-  }
-}
-
-
 @mixin screen-lg {
   @media (#{$screen-lg}) {
     @content;
