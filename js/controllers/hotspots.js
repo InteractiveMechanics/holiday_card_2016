@@ -6,7 +6,7 @@ Hotspots = (function() {
     
 
     var setIndex = function() {
-        var settingsString = getParameterByName('settings');
+        var settingsString = getParameterByName('setting');
         var settingsArray = settingsString.split(',');
         if (settingsString.length == 0 || settingsString == null) {
             setDefaultScene();
