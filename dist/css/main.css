@@ -133,9 +133,6 @@ body {
   position: relative;
   height: auto;
   height: 700px; }
-  @media (min-width: 982px) and (max-width: 1199px) {
-    #scene-wrapper {
-      height: 768px; } }
   @media (min-width: 768px) and (max-width: 981px) {
     #scene-wrapper {
       height: 600px; } }
@@ -146,9 +143,6 @@ body {
   #background img {
     height: 700px;
     align-self: center; }
-    @media (min-width: 982px) and (max-width: 1199px) {
-      #background img {
-        height: 768px; } }
     @media (min-width: 768px) and (max-width: 981px) {
       #background img {
         height: 600px;
@@ -178,19 +172,12 @@ body {
 #chair {
   left: 225px;
   top: 241px; }
-  @media (min-width: 982px) and (max-width: 1199px) {
-    #chair {
-      left: 247px;
-      top: 263px; } }
   @media (min-width: 768px) and (max-width: 981px) {
     #chair {
       left: 187px;
       top: 178px; } }
   #chair img {
     width: 212px; }
-    @media (min-width: 982px) and (max-width: 1199px) {
-      #chair img {
-        width: 235px; } }
     @media (min-width: 768px) and (max-width: 981px) {
       #chair img {
         width: 185px; } }
@@ -198,19 +185,12 @@ body {
 #fireplace {
   left: 419px;
   top: 323px; }
-  @media (min-width: 982px) and (max-width: 1199px) {
-    #fireplace {
-      left: 463px;
-      top: 356px; } }
   @media (min-width: 768px) and (max-width: 981px) {
     #fireplace {
       left: 352px;
       top: 251px; } }
   #fireplace img {
     width: 313px; }
-    @media (min-width: 982px) and (max-width: 1199px) {
-      #fireplace img {
-        width: 336px; } }
     @media (min-width: 768px) and (max-width: 981px) {
       #fireplace img {
         width: 281px; } }
@@ -223,10 +203,6 @@ body {
   height: 145px;
   background: url(../../assets/fire.png);
   animation: play 0.7s steps(8, start) infinite; }
-  @media (min-width: 982px) and (max-width: 1199px) {
-    #fire {
-      left: 587px;
-      top: 386px; } }
   @media (min-width: 768px) and (max-width: 981px) {
     #fire {
       left: 447px;
@@ -235,19 +211,12 @@ body {
 #mantel {
   top: 24px;
   left: 330px; }
-  @media (min-width: 982px) and (max-width: 1199px) {
-    #mantel {
-      top: 29px;
-      left: 366px; } }
   @media (min-width: 768px) and (max-width: 981px) {
     #mantel {
       top: -5px;
       left: 280px; } }
   #mantel img {
     width: 577px; }
-    @media (min-width: 982px) and (max-width: 1199px) {
-      #mantel img {
-        width: 629px; } }
     @media (min-width: 768px) and (max-width: 981px) {
       #mantel img {
         width: 501px; } }
@@ -255,19 +224,12 @@ body {
 #mantelGarland {
   top: 239px;
   left: 362px; }
-  @media (min-width: 982px) and (max-width: 1199px) {
-    #mantelGarland {
-      top: 265px;
-      left: 401px; } }
   @media (min-width: 768px) and (max-width: 981px) {
     #mantelGarland {
       top: 182px;
       left: 311px; } }
   #mantelGarland img {
     width: 521px; }
-    @media (min-width: 982px) and (max-width: 1199px) {
-      #mantelGarland img {
-        width: 567px; } }
     @media (min-width: 768px) and (max-width: 981px) {
       #mantelGarland img {
         width: 445px; } }
@@ -275,19 +237,12 @@ body {
 #pet {
   top: 501px;
   left: 315px; }
-  @media (min-width: 982px) and (max-width: 1199px) {
-    #pet {
-      top: 557px;
-      left: 361px; } }
   @media (min-width: 768px) and (max-width: 981px) {
     #pet {
       top: 405px;
       left: 263px; } }
   #pet img {
     width: 585px; }
-    @media (min-width: 982px) and (max-width: 1199px) {
-      #pet img {
-        width: 608px; } }
     @media (min-width: 768px) and (max-width: 981px) {
       #pet img {
         width: 515px; } }
@@ -295,19 +250,12 @@ body {
 #table {
   top: 292px;
   left: 723px; }
-  @media (min-width: 982px) and (max-width: 1199px) {
-    #table {
-      top: 312px;
-      left: 798px; } }
   @media (min-width: 768px) and (max-width: 981px) {
     #table {
       top: 241px;
       left: 634px; } }
   #table img {
     width: 210px; }
-    @media (min-width: 982px) and (max-width: 1199px) {
-      #table img {
-        width: 237px; } }
     @media (min-width: 768px) and (max-width: 981px) {
       #table img {
         width: 170px; } }
@@ -316,19 +264,12 @@ body {
   top: 32px;
   left: 168px;
   z-index: 1; }
-  @media (min-width: 982px) and (max-width: 1199px) {
-    #tree {
-      top: 37px;
-      left: 211px; } }
   @media (min-width: 768px) and (max-width: 981px) {
     #tree {
       top: -16px;
       left: 135px; } }
   #tree img {
     width: 255px; }
-    @media (min-width: 982px) and (max-width: 1199px) {
-      #tree img {
-        width: 277px; } }
     @media (min-width: 768px) and (max-width: 981px) {
       #tree img {
         width: 225px; } }
